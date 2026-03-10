@@ -1,0 +1,98 @@
+body {
+  background-color: #ffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  padding-top: 80px; /* adjust to match header height */
+}
+
+/* ***** Header Style ***** */
+header {
+  position: fixed; /* fixed at the top of the page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 2rem; /* padding inside header */
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; /* logo on left, nav on right */
+  align-items: center;
+  z-index: 1000; /* stay on top of other content */
+}
+
+/* Logo */
+header #left h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Navigation list horizontally */
+header nav ul {
+  display: flex; /* horizontal layout */
+  gap: 2rem; /* space between links */
+  list-style: none; /* remove default bullets */
+  margin: 0;
+  margin-right: 4rem; /* space from the right edge */
+  padding: 0;
+}
+
+/* Links style */
+header nav ul li a {
+  text-decoration: none; /* remove underline */
+  color: #e8678f;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem; /* clickable area */
+  border-radius: 5px; /* rounded link corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* smooth hover */
+}
+
+/* Hover effect */
+header nav ul li a:hover {
+  color: #fff;
+  background-color: #e8678f;
+}
+
+/* ***** Intro style ***** */
+#intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 2rem;
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 1s ease, transform 1s ease; /* smooth transition */
+}
+
+#intro.show {
+  opacity: 1;
+  transform: translateY(0); /* move to original position */
+}
+
+.intro-text h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  color: #e8678f;
+}
+
+.intro-text h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+#intro img {
+  width: 600px;
+  height: auto;
+}
