@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Text to be displayed
     const introText = "Hi, I'm Anna Granberg!";
     
-    const introElement = document.querySelector(".intro-text h1");
+    const introElement = document.querySelector(".hero-text h1");
     
     // Index for current character
     let index = 0;
@@ -27,8 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-    const intro = document.getElementById('intro');
+    const intro = document.getElementById('hero');
     intro.classList.add('show');  // triggers the transition
   });
 
 
+  window.addEventListener("DOMContentLoaded", () => {
+    const introProjects = document.getElementById("intro-projects");
+    introProjects.classList.add("show");
+  });
