@@ -4,6 +4,13 @@ body {
   margin: 0;
   padding-top: 100px; /* adjust to match header height */
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+}
+
+main {
+  flex: 1;
 }
 
 /* ***** Header Style ***** */
@@ -227,7 +234,7 @@ header nav ul li a:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
-#intro-projects .project a {
+#intro-projects .project h2 {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -235,11 +242,13 @@ header nav ul li a:hover {
   margin-top: 1rem;
   transition: color 0.3s ease;
 }
+
 #intro-projects img {
   margin-top: 1rem;
   width: 100%;
   border-radius: 30px;
 }
+
 #intro-projects .project a:hover {
   color: #f7a1c4;
 }
@@ -251,4 +260,82 @@ header nav ul li a:hover {
   margin: 0.5rem 0 1rem 0;
   text-align: center;
   transition: color 0.3s ease;
+}
+
+/* Video styling */
+.video-wrapper {
+  width: 300px;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  border: 10px solid #fff;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* HEADER NAV */
+  header nav ul {
+    gap: 0.5rem;
+    margin-right: 2rem;
+    font-size: 0.9rem;
+  }
+  /* HERO SECTION */
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .img-container {
+    min-width: auto;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+    max-width: none;
+  }
+
+  /* PROJECT VIDEO + TEXT */
+  .project-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-content p {
+    text-align: center;
+  }
+
+  .video-wrapper {
+    width: 220px;
+  }
+
+  /* PROJECT GRID */
+  #intro-projects .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
