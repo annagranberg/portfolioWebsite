@@ -175,6 +175,45 @@ header nav ul li a:hover {
   width: 45px; /* size of the icon */
   height: 45px;
 }
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+/* Individual skill */
+.skills li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.skills li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon size */
+.skills img {
+  width: 20px;
+  height: 20px;
+}
 /* Projects Section */
 #intro-projects {
   display: flex;
