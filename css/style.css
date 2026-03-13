@@ -1,3 +1,4 @@
+/* ***** Body Style ***** */
 body {
   background-color: #f9f4f7;
   font-family: "Poppins", Arial, sans-serif;
@@ -66,7 +67,7 @@ header nav ul li a:hover {
   transform: translateY(-2px);
 }
 
-/* ***** hero style ***** */
+/* ***** Hero Style ***** */
 #hero {
   display: flex;
   justify-content: space-between;
@@ -175,7 +176,7 @@ header nav ul li a:hover {
   width: 45px; /* size of the icon */
   height: 45px;
 }
-
+/* ***** Skills Style ***** */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -214,7 +215,7 @@ header nav ul li a:hover {
   width: 20px;
   height: 20px;
 }
-/* Projects Section */
+/* ***** Project Style ***** */
 #intro-projects {
   display: flex;
   flex-direction: column;
@@ -243,7 +244,6 @@ header nav ul li a:hover {
 #intro-projects p {
   font-size: 1.2rem;
   color: #555;
-  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -330,14 +330,14 @@ header nav ul li a:hover {
   text-align: center;
 }
 
+/* ***** Smaller Screens Style ***** */
 @media (max-width: 768px) {
-  /* HEADER NAV */
   header nav ul {
     gap: 0.5rem;
     margin-right: 2rem;
     font-size: 0.9rem;
   }
-  /* HERO SECTION */
+
   #hero {
     flex-direction: column;
     text-align: center;
@@ -359,7 +359,6 @@ header nav ul li a:hover {
     max-width: none;
   }
 
-  /* PROJECT VIDEO + TEXT */
   .project-content {
     flex-direction: column;
     align-items: center;
@@ -373,7 +372,6 @@ header nav ul li a:hover {
     width: 220px;
   }
 
-  /* PROJECT GRID */
   #intro-projects .projects-grid {
     grid-template-columns: 1fr;
   }
