@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Darumadrop+One&family=Delius&family=Julius+Sans+One&family=Oswald:wght@200..700&family=Pacifico&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+body {
+  margin-top: 5rem;
+  text-align: center;
+  background-image: url("../images/ocean.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+/* Container */
+#container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  padding-bottom: 2rem;
+}
+
+#container h2 {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  margin-bottom: 0;
+}
+
+#container h3 {
+  margin-top: 0;
+  font-family: "Dancing Script", cursive;
+  color: #d9d1c6;
+}
+
+/* Header */
+header {
+  margin-top: 2rem;
+  display: inline-block;
+  border: 5px solid #1c8d99;
+  border-radius: 12px;
+  padding: 2rem 4rem;
+  text-align: center;
+  margin-top: 40px;
+  color: black;
+}
+
+header h1 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-family: "Dancing Script", cursive;
+  color: #1c8d99;
+  font-size: 25px;
+}
+
+/* Navigation */
+nav {
+  overflow: hidden;
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  margin-top: 2rem;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  padding: 14px 16px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 40px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #1c8d99;
+  color: white;
+  box-shadow: 0 4px 10px rgba(24, 17, 17, 0.1);
+}
+
+/* Products section */
+#products {
+  width: 80%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+#products article {
+  background-color: white;
+  border: 2px solid #1c8d99;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+#products article img {
+  width: 100%; /* fyller kortets bredd */
+  height: 15rem;
+  object-fit: cover; /* beskär bilden snyggt */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#products article h2 {
+  margin: 0.5rem 0 0.3rem 0;
+  font-family: "Oswald", sans-serif;
+}
+
+#products article h3 {
+  margin: 0 0 0.5rem 0;
+  font-family: "Dancing Script", cursive;
+  color: #555;
+}
+
+#products article p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+#products article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#products a {
+  color: #1c8d99;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+#products a:hover {
+  color: #055157;
+  border-color: #055157;
+}
+
+/* Classes section */
+#classes {
+  margin: 2rem auto 0 auto;
+  padding: 20px;
+  width: 80%;
+}
+
+#classes table {
+  width: 100%;
+  border-collapse: separate;
+}
+
+th,
+td {
+  letter-spacing: 3px;
+  border: 2px solid #1c8d99;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+  background-color: #1c8d99;
+  color: white;
+  padding: 0.5em 0.6em;
+}
+
+tr:hover td {
+  background-color: #d7cfc4;
+}
+
+/* Story section */
+#story {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1c8d99;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  color: white;
+}
+
+#story h2 {
+  font-family: "Oswald", sans-serif, bold;
+  font-size: 3rem;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+#story h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+#story img {
+  flex: 1 1 300px; /* bilden får ta minst 300px */
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+#story .story-text {
+  flex: 2 1 500px; /* textdelen blir större än bilden */
+  font-family: "Delius", cursive;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+#story a {
+  color: #055157;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px dotted #055157;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+#story a:hover {
+  color: black;
+  border-color: black;
+}
+
+/* Newsletter section */
+#newsletter {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  border: 2px solid #1c8d99;
+  font-family: "Oswald", sans-serif;
+}
+
+#newsletter h2 {
+  text-align: center;
+  color: #1c8d99;
+  margin-bottom: 1rem;
+}
+
+#newsletter p {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#newsletter form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#newsletter label {
+  display: block;
+  font-weight: bold;
+}
+
+#newsletter input[type="text"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#newsletter h3 {
+  font-family: "Oswald", sans-serif;
+  color: #1c8d99;
+}
+
+#newsletter input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+#newsletter input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #1c8d99;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#newsletter input[type="submit"]:hover {
+  background-color: #166d75;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+
+footer p a {
+  color: #1c8d99;
+  text-decoration: none;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+footer p a:hover {
+  color: #055157;
+  border-color: #055157;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* Header */
+  #container {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  nav ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Products */
+  #products {
+    width: 95%;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  #products article img {
+    height: auto;
+  }
+
+  /* Classes */
+  #classes {
+    width: 95%;
+    overflow-x: auto;
+    margin: 1rem auto;
+    padding: 0;
+  }
+
+  #classes table {
+    width: 80%;
+    border-collapse: collapse;
+    min-width: 300px; /* optional: keeps columns readable */
+    margin: 0 auto; /* center the table */
+  }
+
+  th,
+  td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  th {
+    font-size: 1rem;
+  }
+
+  tr:hover td {
+    background-color: #d7cfc4;
+  }
+
+  /* Story */
+  #story {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  #story h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #story h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  #story {
+    display: block;
+    text-align: center;
+  }
+
+  #story img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  #story .story-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  /* Newsletter */
+  #newsletter {
+    width: 90%;
+    padding: 1rem;
+  }
+}
