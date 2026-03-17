@@ -18,3 +18,8 @@ prevBtn.addEventListener("click", () => {
   index = (index - 1 + slides.length) % slides.length;
   updateSlider();
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+  const introProjects = document.getElementById("intro-projects");
+  introProjects.classList.add("show");
+});

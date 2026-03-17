@@ -31,7 +31,3 @@ window.addEventListener("DOMContentLoaded", () => {
   intro.classList.add("show"); // triggers the transition
 });
 
-window.addEventListener("DOMContentLoaded", () => {
-  const introProjects = document.getElementById("intro-projects");
-  introProjects.classList.add("show");
-});
